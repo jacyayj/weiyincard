@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/background"
+     >
+    <EditText
+        android:id="@+id/addcard_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_bg"
+        android:hint="@string/search"
+        android:gravity="center"
+        />
+	<ListView 
+	    android:id="@+id/free_card_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:divider="@color/background"
+	    android:dividerHeight="10dp"
+	    android:layout_marginTop="10dp"
+	    >
+	</ListView>
+</LinearLayout>

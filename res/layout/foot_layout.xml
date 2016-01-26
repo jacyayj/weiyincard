@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 卡包listview底部  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+	    android:layout_height="80dip"
+	    android:layout_marginTop="10dp"
+	    >
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:contentDescription="@string/add_card"
+	    	android:background="@drawable/add_card_btn"
+	        />
+</LinearLayout>

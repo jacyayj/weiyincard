@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 我的主页界面布局-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+     >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@color/mine_bg"
+	    >
+	    <Button
+	        android:id="@+id/login" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/login"
+	        android:textColor="@color/white"
+	        android:textSize="16sp"
+	        android:background="@null"
+	        />
+	    <ImageView
+	        android:id="@+id/mine_icon"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/mine_icon"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:contentDescription="@string/go"
+	        />
+	    <TextView
+	        android:id="@+id/mine_nickname" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/nickname"
+	        android:textColor="@color/white"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/mine_icon"
+	        />
+	    <TextView 
+	        android:id="@+id/mine_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ID"
+	        android:textColor="@color/white"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/mine_nickname"
+	        />
+	</RelativeLayout>
+    <ListView 
+        android:id="@+id/mine_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:dividerHeight="@null"
+        android:divider="@null"
+        >
+        
+    </ListView>
+</LinearLayout>
